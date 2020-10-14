@@ -1,4 +1,11 @@
+#! bin/env python3
+import pandas as pd
+import numpy as np
+from dateutil.parser import parse
 from collections import defaultdict
+from pathlib import Path
+
+INPUT_PATH = Path.cwd().joinpath('data', 'input_sample.xlsx')
 
 
 attr_list = [
@@ -26,31 +33,6 @@ attr_list = [
     'order_id'
 ]
 
-test_input = [
-    {
-        'cut': 'HARD',
-        'func': 'L',
-        'time': '12:00:00',
-        'begend': '2',
-        'chain': '0',
-        'typ': 'T'
-    },
-    {
-        'cut': '12000',
-        'func': 'A',
-        'typ': 'P'
-    },
-    {
-        'cut': '00007',
-        'func': 'A',
-        'typ': 'P'
-    },
-    {
-        'cut': '98523',
-        'func': 'L',
-        'typ': 'P'
-    }
-]
 
 def make_line(cut='', func='', delay='', plays='', sec='', ter='', segue='',
                 time='', begend='', chain='', rotate='', typ='', comment='',
@@ -63,14 +45,41 @@ def make_line(cut='', func='', delay='', plays='', sec='', ter='', segue='',
         )
 
 
-output = []
-for line in test_input:
-    new_line = {}
-    print(line)
-    for key in attr_list:
-        new_line[key] = line.get(key, '')
-    output.append(make_line(**new_line))
-print(output)
+def get_dataframe_row_list(path=INPUT_PATH):
+    dataframe = pd.read_excel(path)
+    dataframe = dataframe.where(dataframe.notnull(), '')
+    df_dict = dataframe.to_dict(orient='records')
+    return list(map(correct_types_each_line, df_dict))
 
-with open('playlist.txt', 'w+') as outfile:
-    outfile.writelines(output)
+
+def correct_types_each_line(line: dict) -> dict:
+    # {'cut': 'HARD ', 'comment': '', 'typ': 'T', 'func': 'A', 'time': datetime.time(23, 59), 'begend': 2.0, 'chain': 0.0}
+    outdict = {}
+    for key, value in line.items():
+        if key in ['begend', 'chain'] and not value == '':
+            try:
+                outdict[key] = int(value)
+            except ValueError:
+                outdict[key] = value
+        elif key in ['time'] and not value == '':
+            outdict[key] = value.strftime('%H:%M:%S')
+        else:
+            outdict[key] = value
+
+    return outdict
+
+
+def main():
+    
+    rows = get_dataframe_row_list()
+
+    write_list = []
+    for row in rows:
+        write_list.append(make_line(**row))
+
+    with open('test_playlist.txt', 'w+') as outfile:
+        outfile.writelines(write_list)
+
+
+if __name__ == '__main__':
+    main()
