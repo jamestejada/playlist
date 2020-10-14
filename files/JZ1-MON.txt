@@ -1,0 +1,220 @@
+
+                                 DAD PLAYLIST: JZ1-MON   
+                                                                            Page 1
+                                                                            Date: 09/08/20
+
+
+ CUT   TITLE                     LENGTH TYPE TRANS SCH TIME   CHAIN TO ROTATE TO           COMMENT
+-------------------------------------------------------------------------------------------------------------------------------
+ 99988 :10 sec countdown          10.00 P    L                                     
+ 98571 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     23:5     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 52950 R! JZstation overnight :   59.50 P    A                                     
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     00:0     0        0             
+ 98544 JZ TAKE NPR News            0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     00:0     0        0             
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     0:59     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 52950 R! JZstation overnight :   59.50 P    A                                     
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     01:0     0        0             
+ 98544 JZ TAKE NPR News            0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     01:0     0        0             
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     01:5     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 52950 R! JZstation overnight :   59.50 P    A                                     
+ 98525 JZ TAKE STREAM1             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     2:59     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 52950 R! JZstation overnight :   59.50 P    A                                     
+ 98525 JZ TAKE STREAM1             0.00 P    L                                     
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     03:2     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 23201 Insight Tpr Generic        29.86 P    A                                     
+ 98525 JZ TAKE STREAM1             0.00 P    L                                     
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     03:5     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 23201 Insight Tpr Generic        29.86 P    A                                     
+ 91426 M/Ed MON :30 brk           29.54 P    A                                     
+ 98525 JZ TAKE STREAM1             0.00 P    L                                     
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     04:2     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 23201 Insight Tpr Generic        29.86 P    A                                     
+ 98525 JZ TAKE STREAM1             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     4:40     0        0             
+ 98539 JZ TAKE BOOTH A PGM         0.00 P    A                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     12:0     0        0             
+ 25005 TheTak12 200908 SGMT 01  58.12   P    L                                     
+ 00017 Place-holder                1.79 P    N                                     
+
+                                 DAD PLAYLIST: JZ1-MON   
+                                                                            Page 2
+                                                                            Date: 09/08/20
+
+
+ CUT   TITLE                     LENGTH TYPE TRANS SCH TIME   CHAIN TO ROTATE TO           COMMENT
+-------------------------------------------------------------------------------------------------------------------------------
+ HARD                                   T    A     12:0     0        0             
+ 25006 TheTak12 200908 SGMT 02  29.99   P    A                                     
+ 25007 TheTak12 200908 SGMT 03  810.00  P    A                                     
+ 25008 TheTak12 200908 SGMT 04  60.00   P    A                                     
+ 25009 TheTak12 200908 SGMT 05  480.00  P    A                                     
+ 25010 TheTak12 200908 SGMT 06  60.00   P    A                                     
+ 25011 TheTak12 200908 SGMT 07  270.00  P    A                                     
+ 25012 TheTak12 200908 SGMT 08  299.99  P    A                                     
+ 25013 TheTak12 200908 SGMT 09  29.99   P    A                                     
+ 25014 TheTak12 200908 SGMT 10  480.00  P    A                                     
+ 25015 TheTak12 200908 SGMT 11  59.98   P    A                                     
+ 25016 TheTak12 200907 SGMT 12  570.02  P    A                                     
+ 91855 MON - JZ - 12:58:30 1:29   89.28 P    A                                     
+ 18040 FreshAi3 200908 SGMT 01  60.00   P    L                                     
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     13:0     0        0             
+ 18041 FreshAi3 200908 SGMT 02  29.99   P    A     13:0                            
+ 18042 FreshAi3 200908 SGMT 03  545.75  P    A     13:0                            
+ 18043 FreshAi3 200908 SGMT 04  30.01   P    A     13:1                            
+ 18044 FreshAi3 200908 SGMT 05  774.24  P    A     13:1                            
+ 18045 FreshAi3 200908 SGMT 06  60.00   P    A     13:2                            
+ 18046 FreshAi3 200908 SGMT 07  636.52  P    A     13:3                            
+ 18047 FreshAi3 200908 SGMT 08  29.99   P    A     13:4                            
+ 18048 FreshAi3 200908 SGMT 09  480.24  P    A     13:4                            
+ 18049 FreshAi3 200908 SGMT 10  60.00   P    A     13:4                            
+ 18050 FreshAi3 200907 SGMT 11  419.68  P    L     13:4                            
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     14:0     0        0             
+ 98537 JZ TAKE NEWS PGM            0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     15:0     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                     
+ 10021 Market43 200907 SGMT 01  928.39  P    A                                     
+ 91887 MON - JZ - 15:xx - :59.5   59.54 P    A                                     
+ 10023 Market43 200907 SGMT 03  738.59  P    A                                     
+ 91888 MON - JZ - 15:28:45 - 1:   75.08 P    A              9                      
+ 98537 JZ TAKE NEWS PGM            0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     18:3     0        0             
+ 98525 JZ TAKE STREAM1             0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     18:3     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                 JZ T
+ 91894 MON - JZ - 18:34 - :59.5   59.56 P    A                                     
+ 98525 JZ TAKE STREAM1             0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     18:4     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                 JZ T
+ 91895 MON - JZ - 18:48 - 1:59.  119.55 P    A                                     
+ 98525 JZ TAKE STREAM1             0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     18:5     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                 JZ T
+ 91896 MON - JZ - 18:59:00 - 1:  119.57 P    A                                     
+ 98544 JZ TAKE NPR News            0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+
+                                 DAD PLAYLIST: JZ1-MON   
+                                                                            Page 3
+                                                                            Date: 09/08/20
+
+
+ CUT   TITLE                     LENGTH TYPE TRANS SCH TIME   CHAIN TO ROTATE TO           COMMENT
+-------------------------------------------------------------------------------------------------------------------------------
+ HARD                                   T    A     19:0     0        0             
+ 98493 JZ TAKE ENCO no light       0.00 P    A                                 JZ T
+ 10021 Market43 200907 SGMT 01  928.39  P    A                                     
+ 91500 kxjz715pm                  59.57 P    A                                     
+ 10023 Market43 200907 SGMT 03  738.59  P    A                                     
+ 91501 kxjz734pm                  45.04 P    A                                     
+ 10025 TheDail2 200907 SGMT 01  29.02   P    A                                     
+ 10026 TheDail2 200907 SGMT 02  29.02   P    A                                     
+ 10028 TheDail2 200907 SGMT 04  738.85  P    A                                     
+ 91502 kxjz745pm                  29.53 P    A                                     
+ 10030 TheDail2 200907 SGMT 06  581.20  P    A                                     
+ 91507 kxjz759pm                  59.56 P    A                                     
+ 18040 FreshAi3 200908 SGMT 01  60.00   P    A     20:5                            
+ 98496 JZ TAKE NPR News no ligh    0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     20:0     0        0             
+ 98493 JZ TAKE ENCO no light       0.00 P    A                                 JZ T
+ 91508 kxjz806pm                  29.56 P    A                                     
+ 18042 FreshAi3 200908 SGMT 03  545.75  P    A                                     
+ 91509 kxjz814pm                  29.52 P    A     20:1                            
+ 18044 FreshAi3 200908 SGMT 05  774.24  P    A                                     
+ 91511 kxjz829pm                  59.56 P    A     20:2                            
+ 18046 FreshAi3 200908 SGMT 07  636.52  P    A                                     
+ 91513 kxjz837pm                  29.56 P    A                                     
+ 18048 FreshAi3 200908 SGMT 09  480.24  P    A                                     
+ 91514 kxjz846pm                  59.54 P    A                                     
+ 18050 FreshAi3 200907 SGMT 11  419.68  P    A                                     
+ 91515 kxjz859pm                  89.55 P    A                                     
+ 98497 JZ TAKE STREAM4 no light    0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     21:0     0        0             
+ 98544 JZ TAKE NPR News            0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     21:0     0        0             
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     21:2     0        0             
+ 98493 JZ TAKE ENCO no light       0.00 P    A                                 JZ T
+ 91519 kxjz929pm                  59.54 P    A                                     
+ 98497 JZ TAKE STREAM4 no light    0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     21:5     0        0             
+ 98493 JZ TAKE ENCO no light       0.00 P    A                                 JZ T
+ 91525 kxjz959pm                  59.53 P    A                                     
+ 98497 JZ TAKE STREAM4 no light    0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     22:0     0        0             
+ 98544 JZ TAKE NPR News            0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     22:0     0        0             
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     22:2     0        0             
+ 98493 JZ TAKE ENCO no light       0.00 P    A                                 JZ T
+ 91527 kxjz1029pm                 59.57 P    A                                     
+ 98497 JZ TAKE STREAM4 no light    0.00 P    L                                 JZ T
+
+                                 DAD PLAYLIST: JZ1-MON   
+                                                                            Page 4
+                                                                            Date: 09/08/20
+
+
+ CUT   TITLE                     LENGTH TYPE TRANS SCH TIME   CHAIN TO ROTATE TO           COMMENT
+-------------------------------------------------------------------------------------------------------------------------------
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     22:5     0        0             
+ 98493 JZ TAKE ENCO no light       0.00 P    A                                 JZ T
+ 91529 kxjz1059pm                 59.53 P    A                                     
+ 98497 JZ TAKE STREAM4 no light    0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ HARD                                   T    A     23:0     0        0             
+ 98544 JZ TAKE NPR News            0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     23:0     0        0             
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 00017 Place-holder                1.79 P    N                                     
+ HARD                                   T    A     23:2     0        0             
+ 98532 JZ TAKE ENCO                0.00 P    A                                 JZ T
+ 91531 kxjz1129pm                 59.53 P    A                                     
+ 98528 JZ TAKE STREAM4             0.00 P    L                                 JZ T
+ 98523 Place-holder                1.80 P    N                                     
+ SOFT                                   T    A     23:5     1        0             
+ 99988 :10 sec countdown          10.00 P    A                                     
+ CHAIN                                  H    A              JZ2-                   

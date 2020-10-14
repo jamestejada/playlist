@@ -1,6 +1,9 @@
 venv
 .vscode
-files
 __pycache__
 data
 *.txt
+
+!DAD-library.txt
+!JZ1-MON.txt
+!TEST_PL.txt
