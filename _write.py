@@ -5,7 +5,7 @@ from dateutil.parser import parse
 from collections import defaultdict
 from pathlib import Path
 
-INPUT_PATH = Path.cwd().joinpath('data', 'input_sample.xlsx')
+INPUT_PATH = Path.cwd().joinpath('test_output.xlsx')
 
 
 attr_list = [
@@ -53,7 +53,17 @@ def get_dataframe_row_list(path=INPUT_PATH):
 
 
 def correct_types_each_line(line: dict) -> dict:
-    # {'cut': 'HARD ', 'comment': '', 'typ': 'T', 'func': 'A', 'time': datetime.time(23, 59), 'begend': 2.0, 'chain': 0.0}
+    """ Converts types for each required field
+    """
+    # {
+    # 'cut': 'HARD ',
+    # 'comment': '',
+    # 'typ': 'T',
+    # 'func': 'A',
+    # 'time': datetime.time(23, 59),
+    # 'begend': 2.0,
+    # 'chain': 0.0
+    # }
     outdict = {}
     for key, value in line.items():
         if key in ['begend', 'chain'] and not value == '':
@@ -62,7 +72,7 @@ def correct_types_each_line(line: dict) -> dict:
             except ValueError:
                 outdict[key] = value
         elif key in ['time'] and not value == '':
-            outdict[key] = value.strftime('%H:%M:%S')
+            outdict[key] = parse(value).strftime('%H:%M:%S')
         else:
             outdict[key] = value
 

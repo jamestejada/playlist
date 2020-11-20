@@ -2,187 +2,438 @@
 98571N                                      PPlace-holder                                                                                                                
 HARD A             23:59:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
-52950A                                      PJZ Station Overnight                                                                                                        
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
+52950A                                      PR! JZstation overnight :                                                                                                    
+98528L                                      PJZ TAKE STREAM4                                                                                                             
 98523N                                      PPlace-holder                                                                                                                
-HARD A             00:01:002       0        T                                                                                                                            
-98544L                                      PJZ Take NPR News                                                                                                            
-00017N                                      PPlace-holder                                                                                                                
-HARD A             00:06:002       0        T                                                                                                                            
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
-00017N                                      PPlace-holder                                                                                                                
-HARD A             00:59:002       0        T                                                                                                                            
-98532A                                      PJZ TAKE ENCO                                                                                                                
-52950A                                      PJZ Station Overnight                                                                                                        
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
-00017N                                      PPlace-holder                                                                                                                
-HARD A             01:01:002       0        T                                                                                                                            
-98544L                                      PJZ TAKE NPR News                                                                                                            
-00017N                                      PPlace-holder                                                                                                                
-HARD A             01:06:002       0        T                                                                                                                            
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
-00017N                                      PPlace-holder                                                                                                                
 HARD A             01:59:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
-52950A                                      PJZ Station Overnight                                                                                                        
-98525L                                      PJZ TAKE STREAM 1                                                                                                            
+52950A                                      PR! JZstation overnight :                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
 HARD A             02:59:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
-52950A                                      PJZ Station Overnight                                                                                                        
-98525L                                      PJZ TAKE STREAM 1                                                                                                            
+52950A                                      PR! JZstation overnight :                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
-HARD A             03:29:002       0        T                                                                                                                            
+HARD A             03:30:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
 23201A                                      PInsight Tpr Generic                                                                                                         
-98525L                                      PJZ TAKE STREAM 1                                                                                                            
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
-HARD A             03:59:002       0        T                                                                                                                            
+HARD A             03:58:592       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
 23201A                                      PInsight Tpr Generic                                                                                                         
-91426A                                      PM/Ed MON :30 Brk                                                                                                            
-98525L                                      PJZ TAKE STREAM 1                                                                                                            
+91426A                                      PM/Ed MON :30 brk                                                                                                            
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
-HARD A             04:29:002       0        T                                                                                                                            
+HARD A             04:30:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
 23201A                                      PInsight Tpr Generic                                                                                                         
-98525L                                      PJZ TAKE STREAM 1                                                                                                            
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
-HARD A             04:40:002       0        T                                                                                                                            
-98539                                       PJZ TAKE BOOTH A PGM                                                                                                         
+HARD A             04:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91250A                                      PJZ MON 04:59 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             05:19:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91252A                                      PJZ MON 05:19 - 1:29.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             05:33:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91253A                                      PJZ MON 05:33:00 - :59.5                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             05:49:352       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91255A                                      PJZ MON 05:49:35 - 1:54.5                                                                                                    
+98526L                                      PJZ TAKE STREAM2                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             05:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91256A                                      PJZ MON 05:59: - :59.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             06:19:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91258A                                      PJZ MON 06:19: - 1:29.5                                                                                                      
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             06:33:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91259A                                      PJZ MON 06:33:00 - :59.5                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             06:42:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+14036A                                      PBBCTopl2 201120 SGMT 01  8                                                                                                  
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
-HARD A             12:00:002       0        T                                                                                                                            
-25005A                                      PThe Takeaway BB                                                                                                             
+HARD A             06:49:352       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91261A                                      PJZ MON 06:49:35 - 1:54.5                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             06:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91262A                                      PJZ MON 06:59 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             07:19:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91264A                                      PJZ MON 07:19 - 1:29.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             07:33:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91265A                                      PJZ MON 07:33:00 - :59.5                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             07:42:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+14036A                                      PBBCTopl2 201120 SGMT 01  8                                                                                                  
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             07:49:352       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91267A                                      PJZ MON 07:49:35 - 1:54.5                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             07:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91268A                                      PJZ MON 07:59 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             08:19:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91270A                                      PJZ MON 08:19 - 1:29.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             08:33:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91271A                                      PJZ MON 08:33:00 - :59.5                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             08:42:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+14036A                                      PBBCTopl2 201120 SGMT 01  8                                                                                                  
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             08:49:352       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91273A                                      PJZ MON 08:49:35 - 1:54.5                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             08:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91274A                                      PMON/jz8:59:00 :59.5                                                                                                         
+17900A                                      PHidden Hunger BB                                                                                                            
+98544L                                      PJZ TAKE NPR News                                                                                                            
+00017N                                      PPlace-holder                                                                                                                
+HARD A             09:04:002       0        T                                                                                                                            
+98540L                                      PJZ TAKE BOOTH B PGM                                                                                                         
+00017N                                      PPlace-holder                                                                                                                
+HARD A             09:05:402       0        T                                                                                                                            
+98544L                                      PJZ TAKE NPR News                                                                                                            
+00017N                                      PPlace-holder                                                                                                                
+HARD A             09:06:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+17901A                                      PHidden Hunger SegA       1                                                                                                  
+91311A                                      PMON -MON/JZ INSIGHT #1 :                                                                                                    
+17903A                                      PHidden Hunger SegB       1                                                                                                  
+91312A                                      PMON - KXJZ - INSIGHT BRK                                                                                                    
+17905A                                      PHidden Hunger SegC                                                                                                          
+91320A                                      PMON JZ 9:58:30 1:29.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             10:06:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91314A                                      PMON - KXJZ - 10:06 - :29                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             10:19:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91321A                                      PMON - KXJZ - 10:19 - :59                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             10:31:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91322A                                      PMON - KXJZ - 10:31:30 -                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             10:39:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91323A                                      PMON - KXJZ - 10:39 - :59                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             10:50:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91324A                                      PMON - KXJZ - 10:50:30 -                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             10:58:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91330A                                      PMON - KXJZ - 10:58:30 -                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             11:06:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91341A                                      PMON - KXJZ - 11:06 - :29                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             11:19:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91331A                                      PMON - KXJZ - 11:19 - :59                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             11:31:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91332A                                      PMON - KXJZ - 11:31:30 -                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             11:39:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91333A                                      PMON - KXJZ - 11:39 - :59                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             11:50:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91334A                                      PMON - KXJZ - 11:50:30 -                                                                                                     
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             11:58:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91340A                                      PMON - KXJZ - 11:58:30 -                                                                                                     
+25005A                                      PTheTak12 201120 SGMT 01  5                                                                                                  
+98544L                                      PJZ TAKE NPR News                                                                                                            
 00017N                                      PPlace-holder                                                                                                                
 HARD A             12:06:002       0        T                                                                                                                            
-25006A                                      PThe Takeaway SGMT 2                                                                                                         
-25007A                                      PThe Takeaway SGMT 3                                                                                                         
-25008A                                      PThe Takeaway SGMT 4                                                                                                         
-25009A                                      PThe Takeaway SGMT 5                                                                                                         
-25010A                                      PThe Takeaway SGMT 6                                                                                                         
-25011A                                      PThe Takeaway SGMT 7                                                                                                         
-25012A                                      PThe Takeaway SGMT 8                                                                                                         
-25013A                                      PThe Takeaway SGMT 9                                                                                                         
-25014A                                      PThe Takeaway SGMT 10                                                                                                        
-25015A                                      PThe Takeaway SGMT 11                                                                                                        
-25016A                                      PThe Takeaway SGMT 12                                                                                                        
-91855A                                      PMON - JZ - 12:58:30                                                                                                         
-18040L                                      PFresh Air BB                                                                                                                
+98532A                                      PJZ TAKE ENCO                                                                                                                
+00802A                                      PSpark - :30s                                                                                                                
+25007A                                      PTheTak12 201120 SGMT 03  8                                                                                                  
+91853A                                      PMON - JZ - Takeaway BRK1                                                                                                    
+25009A                                      PTheTak12 201120 SGMT 05  4                                                                                                  
+91854A                                      PMON - JZ - Takeaway BRK2                                                                                                    
+25011A                                      PTheTak12 201120 SGMT 07  2                                                                                                  
+25012A                                      PTheTak12 201120 SGMT 08  2                                                                                                  
+00802A                                      PSpark - :30s                                                                                                                
+25014A                                      PTheTak12 201120 SGMT 10  4                                                                                                  
+91779A                                      PMON - JZ - Takeaway BRK3                                                                                                    
+25016A                                      PTheTak12 201120 SGMT 12  5                                                                                                  
+91855A                                      PMON - JZ - 12:58:30 1:29                                                                                                    
+18040A                                      PFreshAi3 201120 SGMT 01  5                                                                                                  
+98544L                                      PJZ TAKE NPR News                                                                                                            
 00017N                                      PPlace-holder                                                                                                                
 HARD A             13:06:002       0        T                                                                                                                            
-18041A                                      PFresh Air SGMT 2                                                                                                            
-18042A                                      PFresh Air SGMT 3                                                                                                            
-18043A                                      PFresh Air SGMT 4                                                                                                            
-18044A                                      PFresh Air SGMT 5                                                                                                            
-18045A                                      PFresh Air SGMT 6                                                                                                            
-18046A                                      PFresh Air SGMT 7                                                                                                            
-18047A                                      PFresh Air SGMT 8                                                                                                            
-18048A                                      PFresh Air SGMT 9                                                                                                            
-18049A                                      PFresh Air SGMT 10                                                                                                           
-18050l                                      PFresh Air SGMT 11                                                                                                           
-00017N                                      PPlace-holder                                                                                                                
-HARD A             14:00:002       0        T                                                                                                                            
-98537L                                      PJZ TAKE NEWS PGM                                                                                                            
-98523N                                      PPlace-holder                                                                                                                
-HARD A             15:00:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
-10021A                                      PMarketplace SGMT 1                                                                                                          
-91887A                                      PMON - JZ - 15:xx Brk 1                                                                                                      
-10023A                                      PMarketplace SGMT 3                                                                                                          
-91888A                                      PMON - JZ - 15:xx Brk 2                                                                                                      
-98537L                                      PJZ TAKE NEWS PGM                                                                                                            
+91852A                                      PMON - JZ - 13:06 - :29.5                                                                                                    
+18042A                                      PFreshAi3 201120 SGMT 03  9                                                                                                  
+91856A                                      PMON - JZ - FRESH AIR #1                                                                                                     
+18044A                                      PFreshAi3 201120 SGMT 05  4                                                                                                  
+91857A                                      PMON - JZ - FRESH AIR MID                                                                                                    
+18046A                                      PFreshAi3 201120 SGMT 07  4                                                                                                  
+91858A                                      PMON - JZ - FRESH AIR #3                                                                                                     
+18048A                                      PFreshAi3 201120 SGMT 09  6                                                                                                  
+91859A                                      PMON - JZ - FRESH AIR #4                                                                                                     
+18050A                                      PFreshAi3 201120 SGMT 11  5                                                                                                  
+91860A                                      PMON - JZ - 1:59 - :1:30.                                                                                                    
+98526L                                      PJZ TAKE STREAM2                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             14:01:002       0        T                                                                                                                            
+98544L                                      PJZ TAKE NPR News                                                                                                            
+98523N                                      PPlace-holder                                                                                                                
+HARD A             14:06:002       0        T                                                                                                                            
+98526L                                      PJZ TAKE STREAM2                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             14:20:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91861A                                      PMON - JZ - 14:20:00 - :5                                                                                                    
+98526L                                      PJZ TAKE STREAM2                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             14:29:302       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91884A                                      PMON - JZ - 14:29:30 - :5                                                                                                    
+98526L                                      PJZ TAKE STREAM2                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             14:49:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91885A                                      PMON - JZ - 14:49:00 - :5                                                                                                    
+98526L                                      PJZ TAKE STREAM2                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             14:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91886A                                      PMON - JZ - 14:59:00 - :5                                                                                                    
+98532A                                      PJZ TAKE ENCO                                                                                                                
+10021A                                      PMarket43 201119 SGMT 01                                                                                                     
+91887A                                      PMON - JZ - 15:xx - :59.5                                                                                                    
+10023A                                      PMarket43 201119 SGMT 03                                                                                                     
+91888A                                      PMON - JZ - 15:28:45 - 1:                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
-HARD A             18:30:302       0        T                                                                                                                            
-98537L                                      PJZ TAKE NEWS PGM                                                                                                            
+HARD A             15:34:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91280A                                      PJZ MON 15:34 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             15:48:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91281A                                      PJZ MON 15:48 - 1:59.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             15:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91282A                                      PJZ MON 15:59 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             16:18:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91284A                                      PJZ MON 16:18 - 1:59.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             16:29:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91285A                                      PJZ MON 16:29 - 1:29.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             16:34:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91286A                                      PJZ MON 16:34 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             16:48:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91287A                                      PJZ MON 16:48 - 1:59.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             16:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91288A                                      PJZ MON 16:59 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             17:18:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91290A                                      PJZ MON 17:18 - 1:59.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             17:29:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91291A                                      PJZ MON 17:29 - 1:29.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             17:34:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91292A                                      PJZ MON 17:34 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             17:48:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91293A                                      PJZ MON 17:48 - 1:59.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             17:59:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91294A                                      PJZ MON 17:59 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+98523N                                      PPlace-holder                                                                                                                
+HARD A             18:18:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91296A                                      PJZ MON 18:18 - 1:59.5                                                                                                       
+98525L                                      PJZ TAKE STREAM1                                                                                                             
+00017N                                      PPlace-holder                                                                                                                
+HARD A             18:29:002       0        T                                                                                                                            
+98532A                                      PJZ TAKE ENCO                                                                                                                
+91297A                                      PJZ MON 18:29 - :59.5                                                                                                        
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 98523N                                      PPlace-holder                                                                                                                
 HARD A             18:34:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
-91894A                                      PMON - JZ - 18:34                                                                                                            
-98525L                                      PJZ TAKE STREAM 1                                                                                                            
+91894A                                      PMON - JZ - 18:34 - :59.5                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 98523N                                      PPlace-holder                                                                                                                
 HARD A             18:48:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
-91895A                                      PMON - JZ - 18:48                                                                                                            
-98525L                                      PJZ TAKE STREAM 1                                                                                                            
+91895A                                      PMON - JZ - 18:48 - 1:59.                                                                                                    
+98525L                                      PJZ TAKE STREAM1                                                                                                             
 98523N                                      PPlace-holder                                                                                                                
 HARD A             18:59:002       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
-91896A                                      PMON - JZ - 18:59:00                                                                                                         
+91896A                                      PMON - JZ - 18:59:00 - 1:                                                                                                    
 98544L                                      PJZ TAKE NPR News                                                                                                            
 00017N                                      PPlace-holder                                                                                                                
 HARD A             19:06:002       0        T                                                                                                                            
 98493A                                      PJZ TAKE ENCO no light                                                                                                       
-10021A                                      PMarketplace SGMT 1                                                                                                          
+10021A                                      PMarket43 201119 SGMT 01                                                                                                     
 91500A                                      Pkxjz715pm                                                                                                                   
-10023A                                      PMarketplace SGMT 3                                                                                                          
+10023A                                      PMarket43 201119 SGMT 03                                                                                                     
 91501A                                      Pkxjz734pm                                                                                                                   
-10025A                                      PThe Daily SGMT 1                                                                                                            
-10026A                                      PThe Daily SGMT 2                                                                                                            
-10028A                                      PThe Daily SGMT 4                                                                                                            
+10025A                                      PTheDail2 201120 SGMT 01  2                                                                                                  
+10026A                                      PTheDail2 201120 SGMT 02  2                                                                                                  
+10028A                                      PTheDail2 201120 SGMT 04  8                                                                                                  
 91502A                                      Pkxjz745pm                                                                                                                   
-10030A                                      PThe Daily SGMT 6                                                                                                            
+10030A                                      PTheDail2 201120 SGMT 06  5                                                                                                  
 91507A                                      Pkxjz759pm                                                                                                                   
-18040A                                      PFresh Air BB                                                                                                                
-98496L                                      PJZ TAKE NPR News no light                                                                                                   
+18040A                                      PFreshAi3 201120 SGMT 01  5                                                                                                  
+98496L                                      PJZ TAKE NPR News no ligh                                                                                                    
 98523N                                      PPlace-holder                                                                                                                
 HARD A             20:06:002       0        T                                                                                                                            
 98493A                                      PJZ TAKE ENCO no light                                                                                                       
 91508A                                      Pkxjz806pm                                                                                                                   
-18042A                                      PFresh Air SGMT 3                                                                                                            
+18042A                                      PFreshAi3 201120 SGMT 03  9                                                                                                  
 91509A                                      Pkxjz814pm                                                                                                                   
-18044A                                      PFresh Air SGMT 5                                                                                                            
+18044A                                      PFreshAi3 201120 SGMT 05  4                                                                                                  
 91511A                                      Pkxjz829pm                                                                                                                   
-18046A                                      PFresh Air SGMT 7                                                                                                            
+18046A                                      PFreshAi3 201120 SGMT 07  4                                                                                                  
 91513A                                      Pkxjz837pm                                                                                                                   
-18048A                                      PFresh Air SGMT 9                                                                                                            
+18048A                                      PFreshAi3 201120 SGMT 09  6                                                                                                  
 91514A                                      Pkxjz846pm                                                                                                                   
-18050A                                      PFresh Air SGMT 11                                                                                                           
+18050A                                      PFreshAi3 201120 SGMT 11  5                                                                                                  
 91515A                                      Pkxjz859pm                                                                                                                   
-98497L                                      PJZ TAKE STREAM 4 no light                                                                                                   
+98497L                                      PJZ TAKE STREAM4 no light                                                                                                    
 00017N                                      PPlace-holder                                                                                                                
 HARD A             21:01:002       0        T                                                                                                                            
 98544L                                      PJZ TAKE NPR News                                                                                                            
 00017N                                      PPlace-holder                                                                                                                
 HARD A             21:06:002       0        T                                                                                                                            
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
+98528L                                      PJZ TAKE STREAM4                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
 HARD A             21:29:302       0        T                                                                                                                            
 98493A                                      PJZ TAKE ENCO no light                                                                                                       
 91519A                                      Pkxjz929pm                                                                                                                   
-98497L                                      PJZ TAKE STREAM 4 no light                                                                                                   
+98497L                                      PJZ TAKE STREAM4 no light                                                                                                    
 98523N                                      PPlace-holder                                                                                                                
 HARD A             21:59:002       0        T                                                                                                                            
 98493A                                      PJZ TAKE ENCO no light                                                                                                       
 91525A                                      Pkxjz959pm                                                                                                                   
-98497L                                      PJZ TAKE STREAM 4 no light                                                                                                   
+98497L                                      PJZ TAKE STREAM4 no light                                                                                                    
 98523N                                      PPlace-holder                                                                                                                
 HARD A             22:01:002       0        T                                                                                                                            
 98544L                                      PJZ TAKE NPR News                                                                                                            
 00017N                                      PPlace-holder                                                                                                                
 HARD A             22:06:002       0        T                                                                                                                            
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
+98528L                                      PJZ TAKE STREAM4                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
 HARD A             22:29:302       0        T                                                                                                                            
 98493A                                      PJZ TAKE ENCO no light                                                                                                       
 91527A                                      Pkxjz1029pm                                                                                                                  
-98497L                                      PJZ TAKE STREAM 4 no light                                                                                                   
+98497L                                      PJZ TAKE STREAM4 no light                                                                                                    
 98523N                                      PPlace-holder                                                                                                                
 HARD A             22:59:002       0        T                                                                                                                            
 98493A                                      PJZ TAKE ENCO no light                                                                                                       
 91529A                                      Pkxjz1059pm                                                                                                                  
-98497L                                      PJZ TAKE STREAM 4 no light                                                                                                   
+98497L                                      PJZ TAKE STREAM4 no light                                                                                                    
 98523N                                      PPlace-holder                                                                                                                
 HARD A             23:01:002       0        T                                                                                                                            
 98544L                                      PJZ TAKE NPR News                                                                                                            
 00017N                                      PPlace-holder                                                                                                                
 HARD A             23:06:002       0        T                                                                                                                            
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
+98528L                                      PJZ TAKE STREAM4                                                                                                             
 00017N                                      PPlace-holder                                                                                                                
 HARD A             23:29:302       0        T                                                                                                                            
 98532A                                      PJZ TAKE ENCO                                                                                                                
 91531A                                      Pkxjz1129pm                                                                                                                  
-98528L                                      PJZ TAKE STREAM 4                                                                                                            
+98528L                                      PJZ TAKE STREAM4                                                                                                             
 98523N                                      PPlace-holder                                                                                                                
-SOFT A             23:55:442       1        T                                                                                                                            
+SOFT A             23:55:442       0        T                                                                                                                            
 99988A                                      P:10 sec countdown                                                                                                           
-CHAINA                      JZ2-TUE         H                                                                                                                            

@@ -33,7 +33,7 @@ class Read:
                 line[45].strip()    # func
             )
             for line in lines
-            if re.search('(\d{5}|HARD\s|SOFT\s)', line)
+            if re.search('(\d{5}|HARD\s|SOFT\s|CHAIN\s)', line)
         ]
 
     def create_dataframe(self, line_tuples_list=None, headers=None):
