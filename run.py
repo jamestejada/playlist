@@ -1,26 +1,37 @@
 import os
 from pathlib import Path
-from modules.read import Read
+from modules.xml_playlist_extract import XML_Playlist_Extract
+from modules.xml_cuts_to_database import XML_Cuts_Extract
 
 # Next:
 #   - Make sure the chain event works.
 
 def main():
-    # input_file = Path.cwd().joinpath('files', 'JZ1-MON.txt')
-    # output_file = Path.cwd().joinpath('JZ1-MON-TEST.xlsx')
-    # playlist_report = Read(input_file, output_file)
-    # print(playlist_report)
-    # playlist_report.write_to_excel()
+    pass
+    # - find all input files by looking in input directories
+    #   EXAMPLE:
+    #       excel_to_text_playlist = os.listdir(excel_to_text_playlist_dir)
+    # - apply corresponding module to each file in the input directory
+    # - apply output module depending on input dir
 
-    input_dir = Path('/mnt/n/Tejada/20201016')
-    dir_list = os.listdir(input_dir)
 
-    for file_name in dir_list:
-        full_path = input_dir.joinpath(file_name)
-        output_file = Path.cwd().joinpath('output', f'{full_path.stem}.xlsx')
-        playlist_report = Read(full_path, output_file)
-        playlist_report.write_to_excel()
+    # NOTES:
+    # - maybe organize modules by "pipe"
+    #   - input dir
+    #   - processing
+    #   - output
 
+
+    playlist_extractor = XML_Playlist_Extract(
+        Path.cwd().joinpath('input', 'xml_to_excel', 'JZ2-TUE.xml')
+    )
+    # print(playlist_extractor)
+
+    cut_extractor = XML_Cuts_Extract(
+        Path.cwd().joinpath('input', 'xml_cuts_to_database', 'cuts.xml')
+    )
+    for cut_no in ['64862', 64862, '64863', 64863, 100, '100']:
+        print(cut_extractor.is_cut_available(cut_no))
 
 if __name__ == '__main__':
     main()

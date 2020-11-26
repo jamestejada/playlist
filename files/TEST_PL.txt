@@ -1,5 +1,0 @@
-HARD L             12:00:0020               T                                                                                                                                      
-12666A                                      P                                                                                       F:CLASS                                         
-00002L                                      P                                                                                       G:cuts                                         
-00007A                                      P                                                                                       G:cuts                                         
-98523L                                      P

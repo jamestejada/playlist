@@ -1,4 +1,4 @@
-from pathlib import Path
+"""from pathlib import Path
 import xml.etree.ElementTree as ET
 
 import pandas as pd
@@ -50,6 +50,8 @@ def main():
         recorddate_list.append(find_attr('recorddate', record))
         killdate_list.append(find_attr('killdate', record))
 
+    # dataframe_dict.get('cut').append(find_attr('cut', record))
+
     dataframe_dict = {
         'cut': cut_list,
         'title': title_list,
@@ -71,3 +73,42 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+
+from modules.xml_playlist_extract import XML_Playlist_Extract
+
+
+class XML_Cuts_Extract(XML_Playlist_Extract):
+    """ Extracts cut information for use in database. 
+    """
+
+    # defaults
+    FIND_LIST = ['encoCutDatabase', 'encoCutRecord']
+    ATTR_LIST = [
+        'cut', 'title', 'group', 'tot_length', 'startdate', 'lastpldate',
+        'recorddate', 'killdate'
+    ]
+    COMPARE_SET = set(x for x in range(100000))
+
+    # override
+    @property
+    def dataframe_dict(self):
+        return self._dataframe_dict
+    
+    @property
+    def unused_cuts(self) -> list:
+        used_cuts_str = self._dataframe_dict.get('cut')
+        used_cuts_int = [int(x) for x in used_cuts_str]
+        unused_cuts_int = self.COMPARE_SET.difference(set(used_cuts_int))
+
+        return [f"{x:05}" for x in unused_cuts_int]
+
+    def is_cut_available(self, cut_no):
+        _cut_no = cut_no if type(cut_no) is str else f"{int(cut_no):05}"
+        return 'AVAILABLE' if _cut_no in self.unused_cuts else 'UNAVAILABLE'
+    
+    def find_empty_cut_range(self, no_of_empty_cuts):
+        """finds x number of available sequential cut numbers 
+        """
+
