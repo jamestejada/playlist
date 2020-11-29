@@ -20,7 +20,7 @@ attr_list = [
     'begend',
     'chain',
     'rotate',
-    'typ',
+    'type',
     'comment',
     'line_id',
     'start_time',
@@ -34,13 +34,13 @@ attr_list = [
 ]
 
 
-def make_line(cut='', func='', delay='', plays='', sec='', ter='', segue='',
-                time='', begend='', chain='', rotate='', typ='', comment='',
+def make_line(cut='', function='', delay='', plays='', sec='', ter='', segue='',
+                time='', begend='', chain='', rotate='', type='', comment='',
                 line_id='', start_time='', end_time='', fostart='', folength='',
                 libloc='', libname='', guid='', order_id=''):
     return (
-        f'{cut:5}{func:1}{delay:8}{plays:2}{sec:1}{ter:1}{segue:1}{time:8}{begend:1}'
-        + f'{chain:8}{rotate:8}{typ:1}{comment:35}{line_id:10}{start_time:7}{end_time:7}'
+        f'{cut:5}{function:1}{delay:8}{plays:2}{sec:1}{ter:1}{segue:1}{time:8}{begend:1}'
+        + f'{chain:8}{rotate:8}{type:1}{comment:35}{line_id:10}{start_time:7}{end_time:7}'
         + f'{fostart:7}{folength:7}{libloc:2}{libname:8}{guid:36}{order_id:5}\n'
         )
 

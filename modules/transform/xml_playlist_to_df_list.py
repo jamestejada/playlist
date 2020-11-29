@@ -1,15 +1,11 @@
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-class XML_Playlist_Extract:
-
-    KEY_CONVERTER = {
-        # converts keys to abbreviations that will work
-        # when writing ENCO DAD text playlist for import
-        'type': 'typ',
-        'function': 'func'
-    }
-
+class XML_Playlist_Transform:
+    """ Transforms XML playlist for writing to excel.
+    These excel files can then be edited and used to create
+    text files to be imported as playlists in ENCO DAD.
+    """
     # defaults
     FIND_LIST = ['encoPlaylistDatabase', 'encoPlaylistRecord']
     ATTR_LIST = [
@@ -22,8 +18,11 @@ class XML_Playlist_Extract:
         self.find_list = find_list or self.FIND_LIST
         self.attr_list = attr_list or self.ATTR_LIST
         self.xml_record_list = self.get_records()
-        self._dataframe_dict = self.build_dict()
-    
+        self.dataframe_dict = self.build_dict()
+
+    def output(self):
+        return self.dataframe_dict
+
     def get_xml_root(self):
         """parses file and returns xml root"""
         tree = ET.parse(self.file_path)
@@ -49,10 +48,3 @@ class XML_Playlist_Extract:
     
     def __str__(self):
         return str(self.dataframe_dict)
-
-    @property
-    def dataframe_dict(self):
-        return {
-            self.KEY_CONVERTER.get(key, key): value 
-            for key, value in self._dataframe_dict.items()
-        }
