@@ -39,10 +39,10 @@ class Pipeline_Control:
 
         self.return_func = self.transform_and_write
     
-    def get_function(self):
+    async def get_function(self):
         return self.return_func
 
-    def transform_and_write(self, input_path):
+    async def transform_and_write(self, input_path):
         output_path = self.OUTPUT_DIR.joinpath(f'{input_path.stem}{self.ext}')
         transformer_instance = self.transformer_class(file_path=input_path)
         self.write_func(transformer_instance.output(), output_path)

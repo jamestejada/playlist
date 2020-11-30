@@ -2,12 +2,19 @@ import asyncio
 from modules.coordinator import Pipeline_Control
 from modules.settings import INPUT_DIR_LIST
 
+async def directories():
+    for directory in INPUT_DIR_LIST:
+        await asyncio.sleep(0.01)
+        yield directory
 
-def main():
 
-    # await asyncio.gather(*[process_directory(directory) for directory in INPUT_DIR_LIST])
-    for each_directory in INPUT_DIR_LIST:
-        process_directory(each_directory)
+async def main():
+
+    loop = asyncio.get_event_loop()
+    # tasks = [process_directory(directory) for directory in INPUT_DIR_LIST]
+
+    await asyncio.gather(*[process_directory(directory) async for directory in directories()])
+
     print('DONE')
     # - find all input files by looking in input directories
     #   EXAMPLE:
@@ -24,16 +31,20 @@ def main():
     # - add SQLite Database
     # - create XML_Cuts_Transform.find_empty_cut_range()
     # - Make sure chain events work.
+async def files_in_dir(directory):
+    for each_file in directory.iterdir():
+        await asyncio.sleep(0.01)
+        yield each_file
 
-def process_directory(directory):
+
+async def process_directory(directory):
     print(f'Getting pipeline from Pipeline_Control for {directory.stem}...')
     pipeline = Pipeline_Control(directory)
-    pipeline_func = pipeline.get_function()
+    pipeline_func = await pipeline.get_function()
 
-    for each_file in directory.iterdir():
+    async for each_file in files_in_dir(directory):
         print(f'processing {each_file.name}')
-        pipeline_func(each_file)
+        await pipeline_func(each_file)
 
 if __name__ == '__main__':
-    # asyncio.run(main())
-    main()
+    asyncio.run(main())
