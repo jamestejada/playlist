@@ -1,12 +1,14 @@
-import os
-from pathlib import Path
-from modules.transform.xml_playlist_to_excel import XML_Playlist_Transform
-from modules.transform.xml_cuts_to_database import XML_Cuts_Transform
-from modules.transform.excel_to_text_playlist import Excel_Playlist_Transform
-from modules.write.to_excel import to_excel
-from modules.write.to_text import to_text
+import asyncio
+from modules.coordinator import Pipeline_Control
+from modules.settings import INPUT_DIR_LIST
+
 
 def main():
+
+    # await asyncio.gather(*[process_directory(directory) for directory in INPUT_DIR_LIST])
+    for each_directory in INPUT_DIR_LIST:
+        process_directory(each_directory)
+    print('DONE')
     # - find all input files by looking in input directories
     #   EXAMPLE:
     #       excel_to_text_playlist = os.listdir(excel_to_text_playlist_dir)
@@ -23,27 +25,15 @@ def main():
     # - create XML_Cuts_Transform.find_empty_cut_range()
     # - Make sure chain events work.
 
+def process_directory(directory):
+    print(f'Getting pipeline from Pipeline_Control for {directory.stem}...')
+    pipeline = Pipeline_Control(directory)
+    pipeline_func = pipeline.get_function()
 
-    # temp
-    import pandas as pd
-
-    playlist_transformer = XML_Playlist_Transform(
-        Path.cwd().joinpath('input', 'xml_to_excel', 'JZ2-TUE.xml')
-    )
-    to_excel(playlist_transformer.dataframe_dict, 'JZ2-TUE.xlsx')
-
-    cut_transformer = XML_Cuts_Transform(
-        Path.cwd().joinpath('input', 'xml_cuts_to_database', 'cuts.xml')
-    )
-    to_excel(cut_transformer.dataframe_dict, 'cuts.xlsx')
-
-    excel_transformer = Excel_Playlist_Transform(
-        excel_path=Path.cwd().joinpath('data', 'sample_input.xlsx')
-    )
-    to_text(excel_transformer.lines(), 'sample_playlist.txt')
-    # for line in excel_transformer.lines():
-    #     print(line)
-
+    for each_file in directory.iterdir():
+        print(f'processing {each_file.name}')
+        pipeline_func(each_file)
 
 if __name__ == '__main__':
+    # asyncio.run(main())
     main()

@@ -1,4 +1,4 @@
-from modules.transform.xml_playlist_to_excel import XML_Playlist_Transform
+from modules.transform.xml_playlist_to_df_list import XML_Playlist_Transform
 
 
 class XML_Cuts_Transform(XML_Playlist_Transform):

@@ -1,4 +1,4 @@
-from modules.settings import OUTPUT_DIR
+from modules.settings import OUTPUT_DIRECTORY
 
 FULL_ATTR_LIST = [
     'cut', 'delay', 'plays', 'sec', 'ter',
@@ -8,10 +8,10 @@ FULL_ATTR_LIST = [
     'libloc', 'libname', 'guid', 'order_id'
 ]
 
-def to_text(line_generator, output_file):
+def to_text(line_generator, output_path):
     output_list = [make_line(line) for line in line_generator]
 
-    with open(OUTPUT_DIR.joinpath(f'{output_file}.txt'), 'w+') as outfile:
+    with open(output_path, 'w+') as outfile:
         outfile.writelines(output_list)
 
 

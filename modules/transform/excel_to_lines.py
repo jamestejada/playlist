@@ -13,14 +13,14 @@ class Excel_Playlist_Transform:
         'cut', 'type', 'function', 'time', 'begend', 'chain'
         ]
 
-    def __init__(self, dataframe_dict=None, excel_path=None):
+    def __init__(self, file_path=None, dataframe_dict=None):
         # At least one parameter is required.
-        if all(x is None for x in [dataframe_dict, excel_path]):
+        if all(x is None for x in [dataframe_dict, file_path]):
             raise Exception(
             """Either a dataframe dictionary or a path to a playlist
             Excel file is required"""
             )
-        self.file_path = excel_path
+        self.file_path = file_path
         self.dataframe_list = dataframe_dict or self.get_dataframe_list()
 
     def get_dataframe_list(self):
