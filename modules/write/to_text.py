@@ -1,5 +1,3 @@
-from modules.settings import OUTPUT_DIRECTORY
-
 FULL_ATTR_LIST = [
     'cut', 'delay', 'plays', 'sec', 'ter',
     'segue', 'function', 'time', 'begend',
@@ -17,14 +15,9 @@ def to_text(line_generator, output_path):
 
 def add_defaults(line_dict):
     for attr in FULL_ATTR_LIST:
-        line_dict.update({
-            attr: (
-                line_dict.get(attr, '') 
-                if attr in line_dict.keys() 
-                and line_dict.get(attr) is not None
-                else ''
-            )
-        })
+        line_dict.update(
+            {attr: line_dict.get(attr, '') if line_dict.get(attr) is not None else ''}
+        )
     return line_dict
 
 def unpack(cut='', function='', delay='', plays='', sec='', ter='', segue='',

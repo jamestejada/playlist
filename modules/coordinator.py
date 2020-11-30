@@ -22,7 +22,8 @@ class Pipeline_Control:
         # directory stem(key)
         XML_TO_EXCEL_DIR.stem: (
             # transformer_class    write function     target extension
-            XML_Playlist_Transform, to_excel, '.xlsx'),
+            XML_Playlist_Transform, to_excel, '.xlsx'
+            ),
         CUTS_TO_DB_DIR.stem: (XML_Cuts_Transform, to_excel, '.xlsx'),
         EXCEL_TO_PLAYLIST_DIR.stem: (Excel_Playlist_Transform, to_text, '.txt')
     }
@@ -32,9 +33,7 @@ class Pipeline_Control:
         self.input_dir = input_dir
 
         (
-            self.transformer_class,
-            self.write_func,
-            self.ext 
+            self.transformer_class, self.write_func, self.ext
         ) = self.PIPELINES.get(self.input_dir.stem)
 
         self.return_func = self.transform_and_write

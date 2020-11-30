@@ -2,28 +2,29 @@ import asyncio
 from modules.coordinator import Pipeline_Control
 from modules.settings import INPUT_DIR_LIST
 
+    # TO DO:
+    #  - FEATURE IDEA: add ability to get 
+    #       1. x number of sequential cuts
+    #       2. list of unused cuts.
+    #       - add SQLite Database to speed this feature up.
+    # - Make sure chain events work. After importing playlist.
+    # - Create module that automatically copies files from
+    #   from network drive.
+    # - See if you can send raw UDP commands to DAD to export
+    #   XML files.
+
+    # NOTE: After rewriting the top level for asynchronous code, 
+    #       I have found that the synchronous code was actually faster.
+    #       The bottleneck in this program is in opening cuts.xml (~5.6s)
+    #       because it is 1,786,116 lines. Writing to "cuts.xlsx" takes ~5.4s.
+    #       The actual processing takes ~0.16 seconds
+
 
 def main():
-
-    # await asyncio.gather(*[process_directory(directory) for directory in INPUT_DIR_LIST])
     for each_directory in INPUT_DIR_LIST:
         process_directory(each_directory)
     print('DONE')
-    # - find all input files by looking in input directories
-    #   EXAMPLE:
-    #       excel_to_text_playlist = os.listdir(excel_to_text_playlist_dir)
-    # - apply corresponding module to each file in the input directory
-    # - apply output module depending on input dir
 
-
-    # TO DO:
-    # - maybe organize modules by "pipe"
-    #       - input dir
-    #       - processing
-    #       - output
-    # - add SQLite Database
-    # - create XML_Cuts_Transform.find_empty_cut_range()
-    # - Make sure chain events work.
 
 def process_directory(directory):
     print(f'Getting pipeline from Pipeline_Control for {directory.stem}...')
@@ -34,6 +35,6 @@ def process_directory(directory):
         print(f'processing {each_file.name}')
         pipeline_func(each_file)
 
+
 if __name__ == '__main__':
-    # asyncio.run(main())
     main()
