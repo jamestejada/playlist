@@ -34,7 +34,7 @@ This was developed using
     ```
     This will create all necessary folders for input and output. 
 
-4. run DCL command in ENCO DAD system to generate XML files (if needed)
+4. run DCL commands in ENCO DAD system to generate XML files (if needed)
 
     - `EXTRACT XML CUTS` to generate an XML file with info for the *entire* library (this may be very large)
     - `EXTRACT XML PLAYLIST <playlist name>` to generate an XML representation of a specific playlist
