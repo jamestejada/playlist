@@ -1,4 +1,3 @@
-import asyncio
 from modules.coordinator import Pipeline_Control
 from modules.settings import INPUT_DIR_LIST
 
