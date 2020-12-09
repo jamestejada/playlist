@@ -1,6 +1,6 @@
 # The Playlist Helper
 
-The purpose of this program is the help make playlist for ENCO DAD easier for CapRadio employees. Current Features include:
+The purpose of this program is the help make playlist editing for ENCO DAD easier for CapRadio employees. Current Features include:
 
 - Creating a spreadsheet Database of all cuts in Library (from DAD XML file)
 - Creating a spreadsheet representation of a playlist
