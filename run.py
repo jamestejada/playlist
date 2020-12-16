@@ -2,15 +2,16 @@ from modules.coordinator import Pipeline_Control
 from modules.settings import INPUT_DIR_LIST
 
     # TO DO:
-    #  - FEATURE IDEA: add ability to get 
+    #   - ***Implement `INJECT XML PLAYLIST` into program
+    #   - FEATURE IDEA: add ability to get 
     #       1. x number of sequential cuts
     #       2. list of unused cuts.
     #       - add SQLite Database to speed this feature up.
-    # - Make sure chain events work. After importing playlist.
-    # - Create module that automatically copies files from
-    #   from network drive.
-    # - See if you can send raw UDP commands to DAD to export
-    #   XML files.
+    #   - Make sure chain events work. After importing playlist.
+    #   - Create module that automatically copies files from
+    #     from network drive.
+    #   - See if you can send raw UDP commands to DAD to export
+    #     XML files.
 
     # NOTE: After rewriting the top level for asynchronous code, 
     #       I have found that the synchronous code was actually faster.

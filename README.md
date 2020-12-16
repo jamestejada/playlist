@@ -56,6 +56,7 @@ This was developed using
 ## Possible Feature Ideas
 - Proper Database for Cut info
 - Send DCL to DAD via raw UDP to trigger generation of XML files.
+- Utilize `INJECT XML` to change playlists and cuts
 - Google Sheets integration
 - Ability to get `x` number of sequential unused cut numbers
 - Ability to get list of all available cut numbers.

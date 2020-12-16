@@ -65,7 +65,7 @@ class Excel_Playlist_Transform:
                 assert attribute in cut_dict.keys()
             except AssertionError:
                 raise KeyError(
-                f"""Input dictionary or file does not have all essential columns\n
+                f"""Input dictionary or file does not have all essential columns
                 {', '.join(self.ESSENTIAL_ATTR_LIST)}
                 """
             )
@@ -91,7 +91,7 @@ SAMPLE OUTPUT:
 [
     {
         'cut': '99988', 
-        'comment': ':10 sec countdown', 'type': 'P', 'function': 'L', 'time': None, 'begend': None, 'chain': None},
+        'comment': ':10 sec countdown', 'type': 'P', 'function': 'L', 'time': None, 'begend': None, 'chain': None,
     {
         'cut': '98571', 
         'comment': 'Place-holder', 'type': 'P', 'function': 'N', 'time': None, 'begend': None, 'chain': None
