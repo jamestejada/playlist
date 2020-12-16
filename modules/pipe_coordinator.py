@@ -1,15 +1,11 @@
-from modules.settings import (
-    CUTS_TO_DB_DIR, EXCEL_TO_PLAYLIST_DIR, XML_TO_EXCEL_DIR
-    )
-from modules.transform.excel_to_lines import Excel_Playlist_Transform
-from modules.transform.xml_cuts_to_df_list import XML_Cuts_Transform
-from modules.transform.xml_playlist_to_df_list import XML_Playlist_Transform
 from modules.write.to_text import to_text
 from modules.write.to_excel import to_excel
+from modules.transform.xml_cuts_to_df_list import XML_Cuts_Transform
+from modules.transform.excel_to_lines import Excel_Playlist_Transform
+from modules.transform.xml_playlist_to_df_list import XML_Playlist_Transform
 from modules.settings import (
     OUTPUT_DIRECTORY, EXCEL_TO_PLAYLIST_DIR, XML_TO_EXCEL_DIR, CUTS_TO_DB_DIR
     )
-
 
 """ coordinates different execution paths based on input folder.
 """

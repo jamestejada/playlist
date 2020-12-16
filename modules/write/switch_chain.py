@@ -19,7 +19,7 @@ class Chain_Day:
         self.chain_to_day_of_week = self.get_day_string(self.chain_to_date)
         self.default_playlists = self.get_defaults()
 
-    def create_chain_playlists(self):
+    def create(self):
         for station in self.STATIONS:
             for io_dict in self.default_playlists.get(station):
 

@@ -1,9 +1,15 @@
+import sys
 from pathlib import Path
 
 def from_cwd(*path_list):
     directory = Path.cwd().joinpath(*path_list)
     directory.mkdir(exist_ok=True, parents=True)
     return directory
+
+def check_flags(flags) -> bool:
+    return any([(arg in flags) for arg in sys.argv[1:]])
+
+CHAIN = check_flags(['chain'])
 
 
 CUTS_TO_DB_DIR = from_cwd('input', 'xml_cuts_to_database')

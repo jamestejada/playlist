@@ -1,5 +1,6 @@
-from modules.coordinator import Pipeline_Control
-from modules.settings import INPUT_DIR_LIST
+from modules.chain_coordinator import Chain_Control
+from modules.pipe_coordinator import Pipeline_Control
+from modules.settings import INPUT_DIR_LIST, CHAIN
 
     # TO DO:
     #   - ***Implement `INJECT XML PLAYLIST` into program
@@ -21,9 +22,12 @@ from modules.settings import INPUT_DIR_LIST
 
 
 def main():
-    for each_directory in INPUT_DIR_LIST:
-        process_directory(each_directory)
-    print('DONE')
+    if CHAIN:
+        Chain_Control().create_chain_playlists()
+    else:
+        for each_directory in INPUT_DIR_LIST:
+            process_directory(each_directory)
+        print('DONE')
 
 
 def process_directory(directory):
