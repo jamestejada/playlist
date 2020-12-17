@@ -7,7 +7,7 @@ from modules.settings import INPUT_DIR_LIST, CHAIN
     #   - FEATURE IDEA: add ability to get 
     #       1. x number of sequential cuts
     #       2. list of unused cuts.
-    #       - add SQLite Database to speed this feature up.
+    #           - add SQLite Database to speed this feature up.
     #   - Make sure chain events work. After importing playlist.
     #   - Create module that automatically copies files from
     #     from network drive.
