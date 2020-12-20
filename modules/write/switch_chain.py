@@ -69,13 +69,31 @@ class Chain_Day:
         chain_to_number = self.chain_to_date.weekday() + 1
         chain_to_date_string = self.chain_to_date.strftime('%m%d')
 
+        if day_number == 5:
+            return {
+                'JZ': [{
+                    'input': f'JZ{day_number}-{self.day_of_week}',
+                    'output': f'JZ{day_number}-{date_string}',
+                    'chain': f'JZ{chain_to_number}{chain_to_date_string}A'
+                    }],
+                'OP': [{
+                    'input': f'OP{day_number}-{self.day_of_week}',
+                    'output': f'OP{day_number}-{date_string}',
+                    'chain': f'OP{chain_to_number}{chain_to_date_string}A'
+                    }],
+                'TOQ': [{
+                    'input': f'TOQ{day_number}{self.day_of_week}',
+                    'output': f'TOQ-{date_string}',
+                    'chain': f'TOQ{chain_to_date_string}A'
+                    }]
+            }
         if day_number == 6:
             return {
                 'JZ': [
                     {
                         'input': f'JZ{day_number}-{self.day_of_week}A',
                         'output': f'JZ{day_number}{date_string}A',
-                        'chain': f'JZ{day_number}{chain_to_date_string}B'
+                        'chain': f'JZ{day_number}{date_string}B'
                     },
                     {
                         'input': f'JZ{day_number}-{self.day_of_week}B',
@@ -125,3 +143,80 @@ class Chain_Day:
                 'chain': f'TOQ-{chain_to_date_string}'
                 }]
         }
+
+
+class Chain_Music(Chain_Day):
+    STATIONS = [
+        'CLA',
+        'JAZ',
+        # 'PSJ',
+        # 'CLST'
+        ]
+    
+    # override
+    def get_defaults(self):
+        day_number = self.playlist_date.weekday() + 1
+        date_string = self.playlist_date.strftime('%m%d')
+
+        chain_to_number = self.chain_to_date.weekday() + 1
+        chain_to_date_string = self.chain_to_date.strftime('%m%d')
+
+        default_dict = {
+            'PSJ': [{
+                'input': f'PSJ{day_number}-{self.day_of_week}',
+                'output': f'PSJ-{date_string}',
+                'chain': f'PSJ-{chain_to_date_string}'
+                }],
+            'CLST': [{
+                'input': f'CLST{day_number}{self.day_of_week}',
+                'output': f'CLST{date_string}',
+                'chain': f'CLST{chain_to_date_string}'
+                }],
+            'JAZ': [{
+                'input': f'JAZ{day_number}-{self.day_of_week}',
+                'output': f'JAZ-{date_string}',
+                'chain': f'JAZ-{chain_to_date_string}'
+                }],
+            'CLA': [{
+                'input': f'CLA{day_number}-{self.day_of_week}',
+                'output': f'CLA-{date_string}',
+                'chain': f'CLA-{chain_to_date_string}'
+                }]
+        }
+
+        if day_number == 5:
+            default_dict.update({
+                'PSJ': [{
+                    'input': f'PSJ{day_number}-{self.day_of_week}',
+                    'output': f'PSJ-{date_string}',
+                    'chain': f'PSJ{chain_to_date_string}A'
+                    }]
+            })
+        if day_number == 6:
+            default_dict.update({
+                'PSJ': [
+                    {
+                        'input': f'PSJ-{day_number}A',
+                        'output': f'PSJ{date_string}A',
+                        'chain': f'PSJ{date_string}B'
+                    },
+                    {
+                        'input': f'PSJ-{day_number}B',
+                        'output': f'PSJ{date_string}B',
+                        'chain': f'PSJ{chain_to_date_string}A'
+                    }
+                ]
+            })
+        if day_number == 7:
+            default_dict.update({
+                'PSJ': [
+                    {
+                        'input': f'PSJ-{day_number}A',
+                        'output': f'PSJ{date_string}A',
+                        'chain': f'PSJ-{chain_to_date_string}'
+                    }
+                ]
+            })
+        return default_dict
+
+

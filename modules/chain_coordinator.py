@@ -2,7 +2,7 @@ from dateutil.parser import parse
 from datetime import datetime, timedelta
 from dateutil.parser._parser import ParserError
 from dateutil.relativedelta import relativedelta
-from modules.write.switch_chain import Chain_Day
+from modules.write.switch_chain import Chain_Day, Chain_Music
 
 
 class Chain_Control:
@@ -56,3 +56,10 @@ class Chain_Control:
 
     def check_exit(self, flags, console_input) -> bool:
         return any([(arg in flags) for arg in console_input])
+
+
+class Chain_Control_Music(Chain_Control):
+    # override
+    def create_chain_playlists(self):
+        for each_date_obj in self.date_range:
+            Chain_Music(each_date_obj).create()

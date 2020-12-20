@@ -8,10 +8,12 @@ def from_cwd(*path_list):
 
 
 def check_flags(flags) -> bool:
-    return any([(arg in flags) for arg in sys.argv[1:]])
+    return any([(arg.lower() in flags) for arg in sys.argv[1:]])
 
 
 CHAIN = check_flags(['chain'])
+MUSIC = check_flags(['music'])
+
 
 CUTS_TO_DB_DIR = from_cwd('input', 'xml_cuts_to_database')
 XML_TO_EXCEL_DIR = from_cwd('input', 'xml_to_excel')

@@ -1,6 +1,6 @@
-from modules.chain_coordinator import Chain_Control
+from modules.chain_coordinator import Chain_Control, Chain_Control_Music
 from modules.pipe_coordinator import Pipeline_Control
-from modules.settings import INPUT_DIR_LIST, CHAIN
+from modules.settings import INPUT_DIR_LIST, CHAIN, MUSIC
 
     # TO DO:
     #   - ***Implement `INJECT XML PLAYLIST` into program
@@ -11,8 +11,8 @@ from modules.settings import INPUT_DIR_LIST, CHAIN
     #   - Make sure chain events work. After importing playlist.
     #   - Create module that automatically copies files from
     #     from network drive.
-    #   - See if you can send raw UDP commands to DAD to export
-    #     XML files.
+    #   DONE- See if you can send raw UDP commands to DAD to export
+    #     XML files. IT WORKS!!! ASCII -> bytes
 
     # NOTE: After rewriting the top level for asynchronous code, 
     #       I have found that the synchronous code was actually faster.
@@ -22,8 +22,10 @@ from modules.settings import INPUT_DIR_LIST, CHAIN
 
 
 def main():
-    if CHAIN:
+    if CHAIN and not MUSIC:
         Chain_Control().create_chain_playlists()
+    elif CHAIN and MUSIC:
+        Chain_Control_Music().create_chain_playlists()
     else:
         for each_directory in INPUT_DIR_LIST:
             process_directory(each_directory)
