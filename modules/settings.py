@@ -27,3 +27,5 @@ INPUT_DIR_LIST = [
 
 OUTPUT_DIRECTORY = from_cwd('output')
 DEFAULT_PLAYLISTS = from_cwd('input', 'default_playlists_xml')
+CUT_TITLE_PATH = from_cwd('input', 'cut_titles')
+FIND_REPLACE_PATH = from_cwd('input', 'find_replace')

@@ -212,7 +212,7 @@ class Chain_Music(Chain_Day):
                 'PSJ': [
                     {
                         'input': f'PSJ-{day_number}A',
-                        'output': f'PSJ{date_string}A',
+                        'output': f'PSJ-{date_string}',
                         'chain': f'PSJ-{chain_to_date_string}'
                     }
                 ]
