@@ -13,6 +13,7 @@ def check_flags(flags) -> bool:
 
 CHAIN = check_flags(['chain'])
 MUSIC = check_flags(['music'])
+FIND = check_flags(['find', 'replace'])
 
 
 CUTS_TO_DB_DIR = from_cwd('input', 'xml_cuts_to_database')

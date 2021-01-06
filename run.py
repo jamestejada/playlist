@@ -1,5 +1,6 @@
-from modules.chain_coordinator import Chain_Control
-from modules.pipe_coordinator import Pipeline_Control
+from modules.coordinators.chain_coordinator import Chain_Control
+from modules.coordinators.find_replace_coordinator import Find_Replace_Control
+from modules.coordinators.pipe_coordinator import Pipeline_Control
 from modules.settings import INPUT_DIR_LIST, CHAIN
 
     # TO DO:
@@ -24,6 +25,8 @@ from modules.settings import INPUT_DIR_LIST, CHAIN
 def main():
     if CHAIN:
         Chain_Control().create_chain_playlists()
+    elif FIND:
+        Find_Replace_Control().replace_cuts()
     else:
         for each_directory in INPUT_DIR_LIST:
             process_directory(each_directory)
