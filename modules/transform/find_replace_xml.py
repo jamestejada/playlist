@@ -19,13 +19,19 @@ class XML_Replace(XML_Playlist_Transform):
     def replace(self, find_cut, replace_cut):
         for record in self.xml_record_list:
             current_cut_number = record.find('cut').text
+
             if current_cut_number == find_cut:
-                current_cut_number = replace_cut
+
+                # NOTE: ElementTree does not let us use
+                # the variable `current_cut_number` to replace field text. 
+                # We have to use the below assignment expression. 
+                record.find('cut').text = replace_cut
+
                 if self.cut_titles:
                     record.find('comment').text = self.cut_titles.get(
                         current_cut_number
                         ).get('title')
 
-        return {self.file_path.name: self.tree}
+        return {self.file_path.stem: self.tree}
 
 

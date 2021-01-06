@@ -50,12 +50,3 @@ class Find_Replace_Control:
     def check_exit(self, console_input) -> bool:
         if any([(arg in self.EXIT_FLAGS) for arg in console_input]):
             exit()
-
-
-def main():
-    finder = Find_Replace_Control().replace_cuts()
-
-
-
-if __name__ == '__main__':
-    main()

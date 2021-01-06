@@ -17,7 +17,7 @@ class XML_Playlist_Transform:
 
     def __init__(self, file_path, find_list=None, attr_list=None):
         self.file_path = file_path
-        self.tree = ET.parse(str(self.file_path))
+        self.tree = ET.parse(self.file_path)
         self.root = self.get_xml_root()
         self.find_list = find_list or self.FIND_LIST
         self.attr_list = attr_list or self.ATTR_LIST
