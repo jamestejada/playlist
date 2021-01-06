@@ -20,16 +20,17 @@ class Chain_Day:
         self.default_playlists = self.get_defaults()
 
     def create(self):
+        tree_dict = {}
         for station in self.STATIONS:
             for io_dict in self.default_playlists.get(station):
-
                 input_file = self.INPUT.joinpath(f'{io_dict.get("input")}.xml')
-                output_file = self.OUTPUT.joinpath(f'{io_dict.get("output")}.xml')
                 chain_to = io_dict.get('chain')
+                tree_dict.update({
+                    io_dict.get('output'): self.replace_chain(input_file, chain_to)
+                })
+        return tree_dict
 
-                self.replace_chain(input_file, output_file, chain_to)
-    
-    def replace_chain(self, input_file, output_file, chain_to):
+    def replace_chain(self, input_file, chain_to):
         xml = ET.parse(input_file)
         enco = xml.getroot()
         playlist = enco.find('encoPlaylistDatabase')
@@ -41,7 +42,7 @@ class Chain_Day:
         for chain in chain_record:
             chain.find('chain').text = chain_to
         
-        xml.write(output_file)
+        return xml
     
     def get_playlist_date(self, input_date):
         """Takes in datetime object (input_date) and returns datetime
@@ -146,12 +147,7 @@ class Chain_Day:
 
 
 class Chain_Music(Chain_Day):
-    STATIONS = [
-        'CLA',
-        'JAZ',
-        # 'PSJ',
-        # 'CLST'
-        ]
+    STATIONS = ['CLA', 'JAZ', 'PSJ', 'CLST']
     
     # override
     def get_defaults(self):

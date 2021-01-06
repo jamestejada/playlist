@@ -6,6 +6,7 @@ FULL_ATTR_LIST = [
     'libloc', 'libname', 'guid', 'order_id'
 ]
 
+# main
 def to_text(line_generator, output_path):
     output_list = [make_line(line) for line in line_generator]
 

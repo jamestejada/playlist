@@ -17,16 +17,27 @@ class XML_Replace(XML_Playlist_Transform):
     
     def replace(self, find_cut, replace_cut):
         for record in self.xml_record_list:
-            current_cut_number = record.find('cut')
-            if record.find('cut').text == find_cut:
-                record.find('cut').text = replace_cut
-                # temp?
-                record.find('comment').text = CUT_TITLES.get(record.find('cut').text).get('title')
-        
-        self.tree.write(self.OUTPUT_DIR.joinpath(self.file_path.name))
+            current_cut_number = record.find('cut').text
+            if current_cut_number == find_cut:
+                current_cut_number = replace_cut
+                record.find('comment').text = CUT_TITLES.get(
+                    current_cut_number
+                    ).get('title')
+
+        return {self.file_path.name: self.tree}
 
 
-def replace_cut(find_cut, replace_cut):
-    for each_file in FIND_REPLACE_PATH.iterdir():
-        parser = XML_Replace(each_file)
-        parser.replace(find_cut, replace_cut)
+def replace_cut(find_cut, replace_cut, input_dir):
+    print(
+        [
+            XML_Replace(each_file).replace(find_cut, replace_cut)
+            for each_file in input_dir.iterdir()
+        ]
+    )
+    # file_name_tree_dict = {}
+    # for each_file in input_dir.iterdir():
+    #     parser = XML_Replace(each_file)
+    #     parser.replace(find_cut, replace_cut)
+    #     file_name_tree_dict.update()
+    # return file_name_tree_dict
+

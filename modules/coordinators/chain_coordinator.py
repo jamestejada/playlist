@@ -2,16 +2,24 @@ from dateutil.parser import parse
 from datetime import datetime, timedelta
 from dateutil.parser._parser import ParserError
 from dateutil.relativedelta import relativedelta
-from modules.write.switch_chain import Chain_Day, Chain_Music
+from modules.settings import MUSIC
+from modules.transform.switch_chain_xml import Chain_Day, Chain_Music
+from modules.write.to_xml import to_xml
 
 
 class Chain_Control:
-    def __init__(self):
-        print("Enter 'q' to Exit...")
+
+    CHAIN_CLASS = Chain_Music if MUSIC else Chain_Day
+    EXIT_FLAGS = ['quit', 'q', 'exit']
+
+    def __init__(self, start_date=None, end_date=None):
+        # print("Enter 'q' to Exit...")
         self.start_date = self.parse_date(
+            start_date or
             input('Please Enter start date for chain sequence: ')
             )
         self.end_date = self.parse_date(
+            end_date or
             input('Please Enter an end date: ')
             )
         self.date_range = self.get_date_range()
@@ -19,17 +27,25 @@ class Chain_Control:
             'Chain Playlists will be created for: ', 
             [date.strftime('%m/%d/%y') for date in self.date_range]
             )
+        self.write = to_xml
 
+    # main
     def create_chain_playlists(self):
-        for each_date_obj in self.date_range:
-            Chain_Day(each_date_obj).create()
+        playlist_dict_list = [
+            self.CHAIN_CLASS(each_date).create()
+            for each_date in self.date_range
+            ]
+        self.write(playlist_dict_list)
 
     def get_date_range(self):
         delta = self.end_date - self.start_date
-        return [(self.start_date + timedelta(days=x)) for x in range(delta.days + 1)]
+        return [
+            (self.start_date + timedelta(days=x))
+            for x in range(delta.days + 1)
+            ]
 
     def parse_date(self, raw_date_string):
-        if self.check_exit(['q'], raw_date_string):
+        if self.check_exit(raw_date_string):
             exit()
         raw_date_string = raw_date_string.strip()
 
@@ -54,12 +70,5 @@ class Chain_Control:
             return date_obj + relativedelta(years=1)
         return date_obj
 
-    def check_exit(self, flags, console_input) -> bool:
-        return any([(arg in flags) for arg in console_input])
-
-
-class Chain_Control_Music(Chain_Control):
-    # override
-    def create_chain_playlists(self):
-        for each_date_obj in self.date_range:
-            Chain_Music(each_date_obj).create()
+    def check_exit(self, console_input) -> bool:
+        return any([(arg in self.EXIT_FLAGS) for arg in console_input])

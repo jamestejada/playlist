@@ -1,6 +1,6 @@
-from modules.chain_coordinator import Chain_Control, Chain_Control_Music
+from modules.chain_coordinator import Chain_Control
 from modules.pipe_coordinator import Pipeline_Control
-from modules.settings import INPUT_DIR_LIST, CHAIN, MUSIC
+from modules.settings import INPUT_DIR_LIST, CHAIN
 
     # TO DO:
     #   - ***Implement `INJECT XML PLAYLIST` into program
@@ -22,10 +22,8 @@ from modules.settings import INPUT_DIR_LIST, CHAIN, MUSIC
 
 
 def main():
-    if CHAIN and not MUSIC:
+    if CHAIN:
         Chain_Control().create_chain_playlists()
-    elif CHAIN and MUSIC:
-        Chain_Control_Music().create_chain_playlists()
     else:
         for each_directory in INPUT_DIR_LIST:
             process_directory(each_directory)
