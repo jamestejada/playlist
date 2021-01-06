@@ -45,8 +45,8 @@ class Chain_Control:
             ]
 
     def parse_date(self, raw_date_string):
-        if self.check_exit(raw_date_string):
-            exit()
+        self.check_exit(raw_date_string)
+        
         raw_date_string = raw_date_string.strip()
 
         try:
@@ -71,4 +71,5 @@ class Chain_Control:
         return date_obj
 
     def check_exit(self, console_input) -> bool:
-        return any([(arg in self.EXIT_FLAGS) for arg in console_input])
+        if any([(arg in self.EXIT_FLAGS) for arg in console_input]):
+            exit()

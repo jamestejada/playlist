@@ -17,6 +17,7 @@ class Find_Replace_Control:
         self.write = to_xml
     
     def replace_cuts(self):
+        print(self)
         self.write( 
             [
                 XML_Replace(each_file).replace(self.find_cut, self.replace_cut)
@@ -25,8 +26,7 @@ class Find_Replace_Control:
         )
     
     def verify_cut(self, cut_input):
-        if self.check_exit(cut_input):
-            exit()
+        self.check_exit(cut_input)
 
         try:
             assert 0 < int(cut_input) <= 99999, 'Cut Number is out of range'
@@ -48,7 +48,8 @@ class Find_Replace_Control:
         return f'Finding {self.find_cut} and replacing it with {self.replace_cut}'
 
     def check_exit(self, console_input) -> bool:
-        return any([(arg in self.EXIT_FLAGS) for arg in console_input])
+        if any([(arg in self.EXIT_FLAGS) for arg in console_input]):
+            exit()
 
 
 def main():

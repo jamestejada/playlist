@@ -1,7 +1,7 @@
 from modules.coordinators.chain_coordinator import Chain_Control
 from modules.coordinators.find_replace_coordinator import Find_Replace_Control
 from modules.coordinators.pipe_coordinator import Pipeline_Control
-from modules.settings import INPUT_DIR_LIST, CHAIN
+from modules.settings import INPUT_DIR_LIST, CHAIN, FIND
 
     # TO DO:
     #   - ***Implement `INJECT XML PLAYLIST` into program
@@ -9,11 +9,14 @@ from modules.settings import INPUT_DIR_LIST, CHAIN
     #       1. x number of sequential cuts
     #       2. list of unused cuts.
     #           - add SQLite Database to speed this feature up.
-    #   - Make sure chain events work. After importing playlist.
+    #   DONE - Make sure chain events work. After importing playlist.
     #   - Create module that automatically copies files from
     #     from network drive.
     #   DONE- See if you can send raw UDP commands to DAD to export
     #     XML files. IT WORKS!!! ASCII -> bytes
+
+
+# Add this comment to readme instead of a note in the entry point file.
 
     # NOTE: After rewriting the top level for asynchronous code, 
     #       I have found that the synchronous code was actually faster.
