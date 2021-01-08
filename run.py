@@ -1,7 +1,8 @@
+import pytest
 from modules.coordinators.chain_coordinator import Chain_Control
 from modules.coordinators.find_replace_coordinator import Find_Replace_Control
 from modules.coordinators.pipe_coordinator import Pipeline_Control
-from modules.settings import INPUT_DIR_LIST, CHAIN, FIND
+from modules.settings import INPUT_DIR_LIST, CHAIN, FIND, TESTING
 
     # TO DO:
     #   - ***Implement `INJECT XML PLAYLIST` into program
@@ -26,7 +27,9 @@ from modules.settings import INPUT_DIR_LIST, CHAIN, FIND
 
 
 def main():
-    if CHAIN:
+    if TESTING:
+        pytest.main()
+    elif CHAIN:
         Chain_Control().create_chain_playlists()
     elif FIND:
         Find_Replace_Control().replace_cuts()

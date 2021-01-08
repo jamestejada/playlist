@@ -14,6 +14,7 @@ def check_flags(flags) -> bool:
 CHAIN = check_flags(['chain'])
 MUSIC = check_flags(['music'])
 FIND = check_flags(['find', 'replace'])
+TESTING =  check_flags(['test', 'testing', 'tests'])
 
 
 CUTS_TO_DB_DIR = from_cwd('input', 'xml_cuts_to_database')
@@ -26,7 +27,11 @@ INPUT_DIR_LIST = [
     EXCEL_TO_PLAYLIST_DIR
     ]
 
+
+TEST_DATA_PATH = from_cwd('tests', 'data')
 OUTPUT_DIRECTORY = from_cwd('output')
-DEFAULT_PLAYLISTS = from_cwd('input', 'default_playlists_xml')
+DEFAULT_PLAYLISTS = (
+    TEST_DATA_PATH if TESTING else from_cwd('input', 'default_playlists_xml')
+    )
 CUT_TITLE_PATH = from_cwd('input', 'cut_titles')
 FIND_REPLACE_PATH = from_cwd('input', 'find_replace')

@@ -16,7 +16,6 @@ class Chain_Day:
         self.playlist_date = self.get_playlist_date(playlist_date)
         self.chain_to_date = self.get_chain_to_date()
         self.day_of_week = self.get_day_string(self.playlist_date)
-        self.chain_to_day_of_week = self.get_day_string(self.chain_to_date)
         self.default_playlists = self.get_defaults()
 
     def create(self):

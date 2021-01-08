@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE enco SYSTEM "\dad\files\enco.dtd" >
+<enco>
+   <encoPlaylistDatabase>
+      <encoPlaylistRecord>
+         <cut>21001</cut>
+         <function>A</function>
+         <delay>0.0</delay>
+         <plays>01</plays>
+         <sec>0</sec>
+         <ter>0</ter>
+         <segue>0</segue>
+         <time></time>
+         <begend></begend>
+         <chain></chain>
+         <rotate></rotate>
+         <type>P</type>
+         <comment></comment>
+         <lineid></lineid>
+         <starttime>0.00</starttime>
+         <endtime>0.00</endtime>
+         <fostart>0.00</fostart>
+         <folength>0.00</folength>
+         <fistart>0.00</fistart>
+         <filength>0.00</filength>
+         <libloc>F:</libloc>
+         <libname>CUTS</libname>
+         <guid>4403c792-4cbe-4a42-84ce-ac7968e8ca08</guid>
+      </encoPlaylistRecord>
+      <encoPlaylistRecord>
+         <cut>CHAIN</cut>
+         <function>A</function>
+         <delay></delay>
+         <plays></plays>
+         <sec></sec>
+         <ter></ter>
+         <segue>0</segue>
+         <time></time>
+         <begend>H</begend>
+         <chain>JZ7-SUN</chain>
+         <rotate>1</rotate>
+         <type>H</type>
+         <comment></comment>
+         <lineid></lineid>
+         <starttime>0.00</starttime>
+         <endtime>0.00</endtime>
+         <fostart></fostart>
+         <folength></folength>
+         <fistart></fistart>
+         <filength></filength>
+         <libloc></libloc>
+         <libname></libname>
+         <guid>eac4801d-5634-4559-98dd-f1f018d0ae2e</guid>
+      </encoPlaylistRecord>
+   </encoPlaylistDatabase>
+</enco>
