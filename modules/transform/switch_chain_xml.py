@@ -146,7 +146,8 @@ class Chain_Day:
 
 
 class Chain_Music(Chain_Day):
-    STATIONS = ['CLA', 'JAZ', 'PSJ', 'CLST']
+    # STATIONS = ['CLA', 'JAZ', 'PSJ', 'CLST']
+    STATIONS = ['PSJ']
     
     # override
     def get_defaults(self):
@@ -198,7 +199,7 @@ class Chain_Music(Chain_Day):
                     {
                         'input': f'PSJ-{day_number}B',
                         'output': f'PSJ{date_string}B',
-                        'chain': f'PSJ{chain_to_date_string}A'
+                        'chain': f'PSJ-{chain_to_date_string}'
                     }
                 ]
             })
