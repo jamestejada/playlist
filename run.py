@@ -2,7 +2,12 @@ import pytest
 from modules.coordinators.chain_coordinator import Chain_Control
 from modules.coordinators.find_replace_coordinator import Find_Replace_Control
 from modules.coordinators.pipe_coordinator import Pipeline_Control
-from modules.settings import INPUT_DIR_LIST, CHAIN, FIND, TESTING
+from modules.settings import INPUT_DIR_LIST, CHAIN, FIND, TESTING, COMMAND
+
+# temp
+from modules.write.write_cmd import write_cmd_cut
+from modules.settings import OUTPUT_DIRECTORY
+import shutil
 
     # TO DO:
     #   - ***Implement `INJECT XML PLAYLIST` into program
@@ -33,6 +38,32 @@ def main():
         Chain_Control().create_chain_playlists()
     elif FIND:
         Find_Replace_Control().replace_cuts()
+    elif COMMAND:
+        from pathlib import Path
+        inject_line_list = [
+            f'INJECT XML PLAYLIST {playlist.stem}'
+            for playlist in OUTPUT_DIRECTORY.iterdir()
+        ]
+        extract_line_list = [
+            f'EXTRACT XML PLAYLIST {playlist.stem}'
+            for playlist in OUTPUT_DIRECTORY.iterdir()
+        ]
+        print(inject_line_list)
+        write_cmd_cut('00456', inject_line_list)
+        print(extract_line_list)
+        write_cmd_cut('00454', extract_line_list, extract_xml=True, extract_default=False)
+        FFA_XML_PATH = Path('/').joinpath('mnt', 'ffa', 'Tejada', 'XML_OUTPUT')
+
+        for each_file in FFA_XML_PATH.iterdir():
+            print(f'unlinking {each_file}')
+            each_file.unlink()
+
+        for each_file in OUTPUT_DIRECTORY.iterdir():
+            print(f'Copying {each_file}')
+            shutil.copy(
+                str(each_file),
+                str(FFA_XML_PATH.joinpath(each_file.name))
+            )
     else:
         for each_directory in INPUT_DIR_LIST:
             process_directory(each_directory)

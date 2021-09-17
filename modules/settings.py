@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
 
+
 def from_cwd(*path_list):
     directory = Path.cwd().joinpath(*path_list)
     directory.mkdir(exist_ok=True, parents=True)
@@ -15,6 +16,7 @@ CHAIN = check_flags(['chain'])
 MUSIC = check_flags(['music'])
 FIND = check_flags(['find', 'replace'])
 TESTING =  check_flags(['test', 'testing', 'tests'])
+COMMAND = check_flags(['command', 'cmd'])
 
 
 CUTS_TO_DB_DIR = from_cwd('input', 'xml_cuts_to_database')

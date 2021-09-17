@@ -147,7 +147,7 @@ class Chain_Day:
 
 class Chain_Music(Chain_Day):
     # STATIONS = ['CLA', 'JAZ', 'PSJ', 'CLST']
-    STATIONS = ['PSJ']
+    STATIONS = ['PSJ', 'CLST']
     
     # override
     def get_defaults(self):
